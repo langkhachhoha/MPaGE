@@ -12,3 +12,4 @@ gym
 matplotlib
 ttkbootstrap
 google-genai 
+pymoo
