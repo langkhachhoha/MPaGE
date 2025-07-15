@@ -1,0 +1,14 @@
+numpy
+scipy
+numba
+requests
+openai
+torch
+tensorboard
+wandb
+pytz
+pandas
+gym
+matplotlib
+ttkbootstrap
+google-genai 
