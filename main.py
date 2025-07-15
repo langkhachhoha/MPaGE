@@ -46,15 +46,15 @@ def main():
     task = ProblemEvaluation()
 
     method = MPaGE(llm=llm,
-                 llm_cluster=llm_cluster,
-                 profiler=EoHProfiler(log_dir='logs', log_style='complex'),
-                 evaluation=task,
-                 max_sample_nums=200,
-                 max_generations=20,
-                 pop_size=6,
-                 num_samplers=1,
-                 num_evaluators=1,
-                #  llm_review=True
+                    llm_cluster=llm_cluster,
+                    profiler=EoHProfiler(log_dir='logs', log_style='complex'),
+                    evaluation=task,
+                    max_sample_nums=200,
+                    max_generations=20,
+                    pop_size=6,
+                    num_samplers=1,
+                    num_evaluators=1,
+                    #  llm_review=True
                  )
 
     method.run()

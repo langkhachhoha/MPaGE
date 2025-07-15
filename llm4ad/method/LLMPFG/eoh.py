@@ -43,6 +43,7 @@ class MPaGE:
         """
         Args:
             llm             : an instance of 'llm4ad.base.LLM', which provides the way to query LLM.
+            llm_cluster     : an instance of 'llm4ad.base.LLM', which provides the way to query LLM for clustering.
             evaluation      : an instance of 'llm4ad.base.Evaluator', which defines the way to calculate the score of a generated function.
             profiler        : an instance of 'llm4ad.method.eoh.EoHProfiler'. If you do not want to use it, you can pass a 'None'.
             max_generations : terminate after evolving 'max_generations' generations or reach 'max_sample_nums'.

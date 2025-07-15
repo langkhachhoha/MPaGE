@@ -47,7 +47,36 @@ We evaluate the proposed **MPaGE** framework on four widely recognized **Multi-o
 ![MPaGE Framework Overview](figure/image3.png)
 ![MPaGE Framework Overview](figure/image1.png)
 ![MPaGE Framework Overview](figure/image2.png)
+---
+## How to use? 🔧
+### 1. Install the dependencies
 
+```bash
+pip install -r requirements.txt
+```
+### 2. Set your LLM API key
+### 3. Run MPaGE
+```bash
+python main.py
+```
+You can flexibly change the following hyperparameters:
+
+| Parameter         | Description |
+|------------------|-------------|
+| `llm`            | The LLM model name used to generate heuristics. |
+| `llm_cluster`    | The LLM model name is used specifically for clustering heuristics based on their semantic structure. |
+| `evaluation`     | Defines the scoring mechanism for evaluating generated functions. |
+| `max_generations`| Terminates the evolution after a fixed number of generations or earlier if `max_sample_nums` is reached. |
+| `max_sample_nums`| Terminates after evaluating this many functions — valid or not — or earlier if `max_generations` is reached. |
+| `pop_size`       | Population size used during the evolutionary process. |
+| `selection_num`  | Number of individuals selected for crossover. |
+| `use_e2_operator`| Boolean flag to enable the E2 operator for logic-driven exploration. |
+| `use_m1_operator`| Boolean flag to activate the M1 mutation operator. |
+| `use_m2_operator`| Boolean flag to activate the M2 mutation operator. |
+| `llm_review`     | If `True`, LLM will review and filter the population before crossover to reduce low-quality logic. |
+
+
+To set up **MPaGE** for your custom optimization problem, please refer to the task configuration files located in: llm4ad/task/optimization
 
 
 ## 📘 Glossary
