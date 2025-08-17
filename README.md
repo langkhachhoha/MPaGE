@@ -683,16 +683,3 @@ If you find our work helpful for your research or applied projects:
 ``` 
 
 
-If you find our work helpful for your research or applied projects:
-
-```bibtex
-@misc{ha2025paretogridguidedlargelanguagemodels,
-      title={Pareto-Grid-Guided Large Language Models for Fast and High-Quality Heuristics Design in Multi-Objective Combinatorial Optimization}, 
-      author={Minh Hieu Ha and Hung Phan and Tung Duy Doan and Tung Dao and Dao Tran and Huynh Thi Thanh Binh},
-      year={2025},
-      eprint={2507.20923},
-      archivePrefix={arXiv},
-      primaryClass={cs.NE},
-      url={https://arxiv.org/abs/2507.20923}, 
-}
-```
