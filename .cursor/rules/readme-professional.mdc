@@ -1,0 +1,68 @@
+---
+description: "Professional standards for README and documentation files. Apply when editing, creating, or improving README.md files, or when asked about documentation quality."
+globs:
+  - "**/README.md"
+  - "**/readme.md"
+alwaysApply: false
+---
+# Professional README Standards
+
+README files must be human-like, technically grounded, and genuinely useful to GitHub visitors. Hold a quality bar suitable for serious open-source or portfolio repositories.
+
+## Require
+
+- **Strong opening**: One clear sentence on what this does and why it matters. No preamble.
+- **Specific, concrete content**: Real commands, real behavior, real requirements. Nothing invented.
+- **Clean structure**: Logical sections, scannable headings, appropriate hierarchy.
+- **Visual support**: Screenshots, diagrams, GIFs, workflows, or output previews when relevant.
+- **Honesty**: Only describe features that exist. Use "planned" or "roadmap" for future work.
+- **Relevant sections only**: Include what visitors need. Omit padded or generic sections.
+
+## Discourage
+
+- Generic filler ("Built with ❤️", "Welcome to X", long "About" intros)
+- Robotic phrasing ("This project aims to...", "In conclusion...")
+- Hype and buzzwords ("revolutionary", "cutting-edge", "powerful")
+- Repetitive templates (every README with identical Contributing/License boilerplate)
+- Irrelevant sections (e.g., "Philosophy" when nobody asked)
+- Claims about features or capabilities that are not implemented
+
+## Encourage
+
+- Realistic image placeholders when assets don't exist:
+
+  ```markdown
+  <!-- TODO: Add screenshot -->
+  ![App screenshot](docs/screenshot.png)
+  ```
+
+  Or explicit note: `Screenshot coming soon.`
+- Professional markdown: tables, fenced code blocks, concise lists
+- Purpose-first: What problem does this solve? How do I use it?
+- Minimal viable README for small projects; richer docs when warranted
+
+## Examples
+
+```markdown
+
+<!-- BAD: Generic, AI-sounding -->
+# Amazing Project
+This revolutionary project aims to leverage cutting-edge AI to transform the way 
+you work. Built with modern technologies and best practices.
+
+<!-- GOOD: Specific, grounded -->
+# JihanBot
+Pipeline that generates IELTS Writing Task 1 essays from chart images using 
+LangGraph, with human-in-the-loop review and a language structure gallery.
+```
+
+```markdown
+
+<!-- BAD: Fake claims -->
+- ✅ Supports 50+ languages
+- ✅ Zero configuration
+
+<!-- GOOD: Honest -->
+- Supports English and Vietnamese (add more via config)
+- Requires API keys in .env (see .env.example)
+```
